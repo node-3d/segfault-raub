@@ -51,6 +51,8 @@ setSignal(SIGSEGV, false);
 
 setSignal(EXCEPTION_BREAKPOINT, true);
 setSignal(SIGTRAP, true);
+
+setSignal(EXCEPTION_ALL, true) // this enables capturing every signal.
 ```
 
 On **Windows**, all the **Unix** signals are `null`, and the opposite is true.
